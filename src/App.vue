@@ -5,17 +5,21 @@
       <v-container>
         <v-row>
           <v-col cols="12">
-            <vertical-bar></vertical-bar>
-          </v-col>
-          <v-col cols="12">
-            <pie-chart></pie-chart>
+            <booking></booking>
           </v-col>
           <v-col cols="12">
             <statistics></statistics>
           </v-col>
           <v-col cols="12">
-            <booking></booking>
+            <column-chart></column-chart>
           </v-col>
+          <v-col cols="12">
+            <vertical-bar></vertical-bar>
+          </v-col>
+          <v-col cols="12">
+            <pie-chart></pie-chart>
+          </v-col>
+
         </v-row>
       </v-container>
     </v-main>
@@ -26,6 +30,7 @@
 import TheHeader from "./layouts/TheHeader";
 import VerticalBar from "./components/Charts/VerticalBar";
 import PieChart from "./components/Charts/PieChart";
+import ColumnChart from "./components/Charts/ColumnChart";
 import Statistics from "./components/Statistics";
 import Booking from "./components/Booking";
 export default {
@@ -35,6 +40,7 @@ export default {
     TheHeader,
     VerticalBar,
     PieChart,
+    ColumnChart,
     Statistics,
     Booking,
   },

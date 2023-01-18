@@ -62,9 +62,18 @@ export default {
       showChart: false,
       series: [0, 0, 0, 0],
       chartOptions: {
+        plotOptions: {
+          pie: {
+            donut: {
+              size: "0%",
+            },
+          },
+        },
+
         labels: ["No-Show", "Canceled", "Check-Out", "Check-In"],
         chart: {
           type: "donut",
+          width: "2000px",
         },
         responsive: [
           {

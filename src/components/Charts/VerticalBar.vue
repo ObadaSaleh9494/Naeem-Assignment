@@ -74,7 +74,8 @@ export default {
 
     chartOptions() {
       let categories = [];
-      for (var i = 0; i < this.number_of_days; i++) categories.push(`${i + 1}`);
+      for (var i = 0; i < this.number_of_days; i++)
+        categories.push(`${Number.isInteger(i / 3) ? `${i + 1}` : ``}`);
       return {
         chart: {
           type: "bar",
@@ -113,7 +114,7 @@ export default {
   },
   mounted() {
     this.showChart = true;
-    this.save()
+    this.save();
   },
   methods: {
     save() {
