@@ -1,6 +1,7 @@
 <template>
   <v-app-bar app color="white" dark>
-    <div class="d-flex align-center">
+    <v-row>
+      <v-col class="d-flex justify-space-around">
       <v-img
         alt="Vuetify Logo"
         class="shrink mr-2 mb-2"
@@ -9,7 +10,7 @@
         transition="scale-transition"
         width="150"
       />
-    </div>
-    <v-spacer></v-spacer>
+    </v-col>
+  </v-row>
   </v-app-bar>
 </template>
