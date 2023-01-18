@@ -14,8 +14,7 @@
             hide-details
             dense
             clearable
-            placeholder="e.g. filter for id, email, name, etc"
-            @keyup.enter="searchUser(searchQuery)"
+            placeholder="e.g. filter for email, name, etc"
           ></v-text-field>
         </v-col>
       </v-row>
