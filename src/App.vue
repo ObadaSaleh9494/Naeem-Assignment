@@ -46,3 +46,8 @@ export default {
   },
 };
 </script>
+<style>
+.theme--light.v-application {
+    background: rgb(228, 228, 228);
+}
+</style>

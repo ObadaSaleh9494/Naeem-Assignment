@@ -105,11 +105,6 @@ export default {
         xaxis: {
           categories: this.categories,
         },
-        yaxis: {
-          title: {
-            text: "$ (thousands)",
-          },
-        },
         fill: {
           opacity: 1,
         },
