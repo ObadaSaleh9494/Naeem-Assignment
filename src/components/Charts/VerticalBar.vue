@@ -16,7 +16,7 @@
             <template v-slot:activator="{ on, attrs }">
               <v-text-field
                 v-model="date"
-                label="Picker in dialog"
+                label="Select a Month"
                 prepend-icon="mdi-calendar"
                 readonly
                 v-bind="attrs"
@@ -58,7 +58,6 @@ export default {
         0, 0, 0, 0, 0, 0,
       ],
       date: "2015-12",
-      menu: false,
       modal: false,
       showChart: false,
       data,

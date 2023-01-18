@@ -8,6 +8,9 @@
             <vertical-bar></vertical-bar>
           </v-col>
           <v-col cols="12">
+            <pie-chart></pie-chart>
+          </v-col>
+          <v-col cols="12">
             <statistics></statistics>
           </v-col>
           <v-col cols="12">
@@ -21,7 +24,8 @@
 
 <script>
 import TheHeader from "./layouts/TheHeader";
-import VerticalBar from "./components/Charts/VerticalBar"
+import VerticalBar from "./components/Charts/VerticalBar";
+import PieChart from "./components/Charts/PieChart";
 import Statistics from "./components/Statistics";
 import Booking from "./components/Booking";
 export default {
@@ -30,6 +34,7 @@ export default {
   components: {
     TheHeader,
     VerticalBar,
+    PieChart,
     Statistics,
     Booking,
   },
